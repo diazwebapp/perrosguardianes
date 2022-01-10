@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme-color);
+}
+@media(min-width:720px){
+    .dog_page #caracteristicas ul{
+        columns:2;
+    }
+}
+@media(min-width:960px){
+    .dog_page #caracteristicas ul{
+        columns:3;
+    }
+    .dog_page article > div, .page_home .perro_ataque_perro_guardian > div{
+        position: relative;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .dog_page article > div p, .page_home > .perro_ataque_perro_guardian > div p, .page_home > .perro_ataque_perro_guardian > div ul{
+        width:calc(100% - 300px);
+    }
+}
