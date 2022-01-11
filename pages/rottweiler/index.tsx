@@ -4,9 +4,11 @@ import GlobalAppContext from '../../context/context'
 import DogCover from '../../components/DogCover'
 import Image from 'next/dist/client/image'
 import { placeholder_1 } from '../../components/placeholders'
+import { useRouter } from 'next/dist/client/router'
 
 const Rottweiler = () => {
     const {app_dispatch} = useContext(GlobalAppContext)
+    const {asPath} = useRouter()
     useEffect(()=>{
         app_dispatch({type:"swich_menu",payload:false})
     },[])
@@ -22,7 +24,7 @@ const Rottweiler = () => {
             <meta property="og:type" content="website" />
             <meta property="og:description" content="El rottweiler es una raza canina de tipo molosoide originaria de Alemania, aunque fue también usado en la Antigua Roma y también es conocido como rottweiler americano debido a la certificación recibida por American Kennel Club." />
             <meta property="og:locale" content="es_ES" />
-            <meta property="og:url" content={process.env.DOMAIN} />
+            <meta property="og:url" content={process.env.DOMAIN+asPath} />
             <meta property="og:image" content={process.env.DOMAIN + "/imgs/img_DogBreed-Rottweiler.jpg"} />
             <meta property="og:image:secure_url" content={process.env.DOMAIN + "/imgs/img_DogBreed-Rottweiler.jpg"} />
             <meta property="og:image:width" content="320" />
@@ -36,11 +38,11 @@ const Rottweiler = () => {
             <meta name="twitter:label1" content="Tiempo de lectura" />
             <meta name="twitter:data1" content="3 minutos" />
             {/**LINK Meta*/}
-            <link rel="shortlink" href={process.env.DOMAIN} />
-            <link rel="canonical" href={process.env.DOMAIN} />
+            <link rel="shortlink" href={process.env.DOMAIN+asPath} />
+            <link rel="canonical" href={process.env.DOMAIN+asPath} />
             <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
             <meta name="googlebot" content="index, follow" />
-            <meta property="ia:markup_url" content={process.env.DOMAIN} />
+            <meta property="ia:markup_url" content={process.env.DOMAIN+asPath} />
         </Head>
         <DogCover
         title='Rottweiler'

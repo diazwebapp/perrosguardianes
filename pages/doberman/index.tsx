@@ -2,9 +2,11 @@ import Head from 'next/head'
 import { useContext, useEffect } from 'react'
 import GlobalAppContext from '../../context/context'
 import DogCover from '../../components/DogCover'
+import { useRouter } from 'next/dist/client/router'
 
 const Doberman = () => {
     const {app_dispatch} = useContext(GlobalAppContext)
+    const {asPath} = useRouter()
     useEffect(()=>{
         app_dispatch({type:"swich_menu",payload:false})
     },[])
@@ -20,7 +22,7 @@ const Doberman = () => {
             <meta property="og:type" content="website" />
             <meta property="og:description" content="Los Dóberman son perros fuertes y enérgicos que necesitan practicar mucho ejercicio. Si no lo practican, es probable que se vuelvan irritables o incluso agresivos." />
             <meta property="og:locale" content="es_ES" />
-            <meta property="og:url" content={process.env.DOMAIN} />
+            <meta property="og:url" content={process.env.DOMAIN+asPath} />
             <meta property="og:image" content={process.env.DOMAIN + "/imgs/img_DogBreed-Doberman.jpg"} />
             <meta property="og:image:secure_url" content={process.env.DOMAIN + "/imgs/img_DogBreed-Doberman.jpg"} />
             <meta property="og:image:width" content="320" />
@@ -34,11 +36,11 @@ const Doberman = () => {
             <meta name="twitter:label1" content="Tiempo de lectura" />
             <meta name="twitter:data1" content="3 minutos" />
             {/**LINK Meta*/}
-            <link rel="shortlink" href={process.env.DOMAIN} />
-            <link rel="canonical" href={process.env.DOMAIN} />
+            <link rel="shortlink" href={process.env.DOMAIN+asPath} />
+            <link rel="canonical" href={process.env.DOMAIN+asPath} />
             <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
             <meta name="googlebot" content="index, follow" />
-            <meta property="ia:markup_url" content={process.env.DOMAIN} />
+            <meta property="ia:markup_url" content={process.env.DOMAIN+asPath} />
         </Head>
         <DogCover 
             title='Doberman'

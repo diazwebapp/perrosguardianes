@@ -4,9 +4,11 @@ import { placeholder_1 } from '../components/placeholders'
 import { useContext, useEffect } from 'react'
 import GlobalAppContext from '../context/context'
 import Link from 'next/dist/client/link'
+import { useRouter } from 'next/dist/client/router'
 
 const Index = () => {
   const {app_dispatch} = useContext(GlobalAppContext)
+  const {asPath} = useRouter()
   useEffect(()=>{
       app_dispatch({type:"swich_menu",payload:false})
   },[])
@@ -22,7 +24,7 @@ const Index = () => {
       <meta property="og:type" content="website" />
       <meta property="og:description" content="El perro guardián es aquel capaz de proteger a su dueño ante un peligro. Estos tipos de perros guardianes suelen haber pasado por un periodo de entrenamiento especial" />
       <meta property="og:locale" content="es_ES" />
-      <meta property="og:url" content={process.env.DOMAIN} />
+      <meta property="og:url" content={process.env.DOMAIN+asPath} />
       <meta property="og:image" content={process.env.DOMAIN + "/imgs/perros-guardianes.jpg"} />
       <meta property="og:image:secure_url" content={process.env.DOMAIN + "/imgs/perros-guardianes.jpg"} />
       <meta property="og:image:width" content="320" />
@@ -36,11 +38,11 @@ const Index = () => {
       <meta name="twitter:label1" content="Tiempo de lectura" />
       <meta name="twitter:data1" content="3 minutos" />
       {/**LINK META INDEX*/}
-      <link rel="shortlink" href={process.env.DOMAIN} />
-      <link rel="canonical" href={process.env.DOMAIN} />
+      <link rel="shortlink" href={process.env.DOMAIN+asPath} />
+      <link rel="canonical" href={process.env.DOMAIN+asPath} />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />
-      <meta property="ia:markup_url" content={process.env.DOMAIN} />
+      <meta property="ia:markup_url" content={process.env.DOMAIN+asPath} />
     </Head>
     <section className="page_home" >
       <h1>Guia definitiva de perros guardianes</h1>
