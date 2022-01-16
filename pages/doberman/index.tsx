@@ -120,15 +120,15 @@ const Doberman = () => {
                 <p>
                     Un perro doberman debe cumplir con varias especificaciones muy particulares para ser considerado de <b>raza pura o pedigree</b>.
                 </p>
-                <b>Temperamento</b>
+                <h3><b>Temperamento</b></h3>
                 <p>
                     El doberman nunca debe ser tímido o mostrar tendencias a ser vicioso. Un pura raza siempre será enérgico, sociable y atento. Cuando no está en modo de perro guardián es amable con la gente y muy bueno con los niños. Su propósito es ser vigilante y leal, sobre todo con su par (ya sea humano o canino), y muy obediente y sensible a la formación. La ausencia de miedo es también un importante rasgo temperamental, un doberman está dispuesto a proteger en tiempos de peligro.
                 </p>
-                <b>Pelaje y color</b>
+                <h3><b>Pelaje y color</b></h3>
                 <p>
                     Una cubierta de pelo corto es el estándar para el doberman de pura raza. El pelo debe ser plano y cercano al cuerpo, y grueso en su totalidad. En cuanto a la coloración, los colores permitidos son: negro, rojizo, azul y beige. El beige es una dilución del rojizo y el azul se considera una dilución del negro estándar, que es más común. El doberman también puede tener manchas de tono tostado cuando su color principal es negro. Estas marcas sólo pueden estar por encima de los ojos, en el hocico, en la base de la cola, en el pecho, y en las patas o los pies.
                 </p>
-                <b>Tamaño</b>
+                <h3><b>Tamaño</b></h3>
                 <p>
                     Los doberman son perros de tamaño mediano. Aunque muchas personas consideran que son bastante grandes, tienen una altura de 26 a 28 pulgadas (65 a 70 cm) -en los hombros- para los machos y de 24 a 26 pulgadas (60 a 65 cm) para las hembras. Esto todavía es considerado un tamaño medio, debido a su elegante y delgada contextura. La altura de un doberman desde la pata a los hombros debe ser la misma que la longitud del animal desde la parte frontal del pecho hasta el punto posterior de la parte superior del muslo. La cabeza, el cuello y las patas están en proporción con el resto del cuerpo. El pecho de un pura raza es amplio con un antepecho bien definido.
                 </p>

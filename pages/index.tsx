@@ -16,13 +16,13 @@ const Index = () => {
     <Head>
       <title>Guia definitiva de Perros guardianes - Diaz web app</title>
       <meta name="author" content="diaz web app" />
-      <meta name="description" content="El perro guardián es aquel capaz de proteger a su dueño ante un peligro. Estos tipos de perros guardianes suelen haber pasado por un periodo de entrenamiento especial" />
+      <meta name="description" content="Los mejores perros guardianes son devotos, valientes y saben cuándo luchar para de proteger a su dueño ante un  intruso." />
 
       {/** OG META */}
       <meta property="og:title" content="Guia definitiva de Perros guardianes - Diaz web app" />
       <meta property="og:site_name" content={'diaz web app'} />
       <meta property="og:type" content="website" />
-      <meta property="og:description" content="El perro guardián es aquel capaz de proteger a su dueño ante un peligro. Estos tipos de perros guardianes suelen haber pasado por un periodo de entrenamiento especial" />
+      <meta property="og:description" content="Los mejores perros guardianes son devotos, valientes y saben cuándo luchar para de proteger a su dueño ante un  intruso." />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:url" content={process.env.DOMAIN+asPath} />
       <meta property="og:image" content={process.env.DOMAIN + "/imgs/perros-guardianes.jpg"} />
@@ -32,7 +32,7 @@ const Index = () => {
       {/**TWITTER META */}
       <meta name="twitter:title" content="Guia definitiva de Perros guardianes - Diaz web app" />
       <meta name="twitter:site" content="@diazwebapp" />
-      <meta name="twitter:description" content="El perro guardián es aquel capaz de proteger a su dueño ante un peligro. Estos tipos de perros guardianes suelen haber pasado por un periodo de entrenamiento especial" />
+      <meta name="twitter:description" content="Los mejores perros guardianes son devotos, valientes y saben cuándo luchar para de proteger a su dueño ante un  intruso." />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content={process.env.DOMAIN + "/imgs/perros-guardianes.jpg"} />
       <meta name="twitter:label1" content="Tiempo de lectura" />
@@ -47,50 +47,79 @@ const Index = () => {
     <section className="page_home" >
       <h1>Guia definitiva de perros guardianes</h1>
       <p>
-        El perro guardián es aquel capaz de proteger a su dueño ante un peligro. Estos tipos de perros guardianes suelen haber pasado por un periodo de entrenamiento, con el que han aprendido a reaccionar de una manera concreta ante determinados estímulos y ser así el mejor perro guardian.
+      Los mejores perros guardianes son devotos, valientes y saben cuándo luchar para de proteger a su dueño ante un  intruso.
 
       </p>
-      <h2>Razas de perros guardianes</h2>
+      <h2>Las mejores razas de perros guardianes</h2>
       <p>
-        Un intruso no será rival para estas imponentes, valientes y leales mascotas, aquí tiene un listado de las mejores razas de perros protectores.
+        Estos son los principales tipos de perros guardianes, reunimos solo las mejores clases y razas de perros guardianes.
       </p>
 
       <div className="gallery">
-        <div>
-          <Link href="/rottweiler" >
-            <a href="/rottweiler" title='rottweiler perro' >
+        <article>
+          <header>
+            <Link href="/rottweiler" >
+            <a rel="bookmark" href="/rottweiler" title='rottweiler perro' >
               <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/img_DogBreed-Rottweiler.jpg" title='rottweiler perro' alt='rottweiler perro' />
+              <h3>Rottweiler</h3>
             </a>
           </Link>
-        </div>
-        <div>
-          <Link href="/doberman" >
-            <a href="/doberman" title="doberman">
-              <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/img_DogBreed-Doberman.jpg" alt='doberman perro' title='doberman perro' />
-            </a>
-          </Link>
-        </div>
-        <div>
-          <Link href="/bullmastiff" >
-            <a href="/bullmastiff" title="bullmastiff">
-              <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/img_DogBreed-Bull-Mastif.jpg" alt='bullmastiff perro' title='bullmastiff perro' />
-            </a>
-          </Link>
-        </div>
-        <div>
-          <Link href="/pastor-aleman" >
-            <a href="/pastor-aleman" title="pastor aleman">
-              <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/img_DogBreed-German-Shepard.jpg" alt='pastor aleman perro' title='pastor aleman perro' />
-            </a>
-          </Link>
-        </div>
+          </header>
+        </article>
+        <article>
+          <header>
+            <Link href="/doberman" >
+              <a rel="bookmark" href="/doberman" title="doberman">
+                <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/img_DogBreed-Doberman.jpg" alt='doberman perro' title='doberman perro' />
+                <h3>Doberman</h3>
+              </a>
+            </Link>
+          </header>
+        </article>
+        <article>
+          <header>
+            <Link href="/bullmastiff" >
+              <a rel="bookmark" href="/bullmastiff" title="bullmastiff">
+                <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/img_DogBreed-Bull-Mastif.jpg" alt='bullmastiff perro' title='bullmastiff perro' />
+                <h3>bullmastiff</h3>
+              </a>
+            </Link>
+          </header>
+        </article>
+        <article>
+          <header>
+            <Link href="/pastor-aleman" >
+              <a rel="bookmark" href="/pastor-aleman" title="pastor aleman">
+                <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/img_DogBreed-German-Shepard.jpg" alt='pastor aleman perro' title='pastor aleman perro' />
+                <h3>Pastor Aleman</h3>
+              </a>
+            </Link>
+          </header>
+        </article>
       </div>
-      
-      <h2>Mejores perros guardianes</h2>
-      <p>
-        Los mejores perros guardianes son devotos, valientes y saben cuándo luchar contra un intruso, pero eso no significa que sean perros agresivos en su vida diaria. Al proveerles entrenamiento cuando son cachorros, estas mascotas harán todo lo posible para protegerte. Igual de importante, te harán sentir seguro y te ofrecerán mucho amor y afecto.
-      </p>
 
+      <h2>Perros guardianes para el hogar</h2>
+      <p>
+          Entre las diferentes razas de perros, existen variedades que se caracterizan por sus cualidades físicas e instinto protector. Sin embargo, no solo deben ser perros guardianes para el hogar, sino también deben proteger a su dueño y jamás ser agresivo con su propia familia. <br/>
+
+          En la diversidad de razas de perros guardianes, existen algunas que se destacan no solo por su fuerza física, sino también porque poseen otras características y habilidades además de la fuerza que lo convierten en un verdadero perro guardian de casa.
+      </p>      
+      <h2>Para qué sirve un perro guardia</h2>
+      <p>
+          Adicionalmente de ser los mejores perros guardianes para el hogar, existen otras áreas en las que estos perros protectores nos son de mucha utilidad:
+      </p>
+      <div className="gallery">
+        <article>
+          <header>
+            <Link href="/perros-guardianes-para-fincas" >
+            <a href="/perros-guardianes-para-fincas" title='perros guardianes para fincas' rel="bookmark" >
+              <Image placeholder="blur" blurDataURL={placeholder_1} width={150} height={150} layout='responsive' src="/imgs/perro_guardian_fincas.jpg" title='perros guardianes para fincas' alt='perros guardianes para fincas' />
+              <h3>perros guardianes para fincas</h3>
+            </a>
+          </Link>
+          </header>
+        </article>
+      </div>
       <h2>Perros guardianes no peligrosos</h2>
       <b>
         A veces, los perros protectores tienen mala reputación, cuando en realidad, los rasgos que los convierten en mejores perros de guardia son también los que los convierten en mejores y leales para la familia.
@@ -110,6 +139,35 @@ const Index = () => {
 
         <b>Que no se acobarde ante un momento de tensión.</b> Junto a la valentía, la lista de rasgos de los perros guardianes y familiares incluye la tranquilidad y la capacidad para mantenerse alerta y concentrados, ya que muchos se emplean para proteger propiedades desocupadas, por lo que recibirán pocos estímulos durante largos periodos de tiempo.
       </p>
+      <article className="perro_ataque_perro_guardian" >
+        <h2>Reconoce la diferencia entre un perro guardián y un perro de ataque</h2>
+        <div>
+          <Image placeholder="blur" blurDataURL={placeholder_1} width="200" height="200" src="/imgs/img_DogBreed-German-Shepard.jpg" alt='perro guardian' title='perro guardian' />
+          <p>
+            Un perro guardián se entrena para alertar a su dueño de la presencia de un extraño o intruso a través de ladridos o gruñidos. Los perros guardianes usualmente no son entrenados para atacar cuando lo ordenes o actuar de manera excesivamente agresiva con un extraño. Por lo tanto, los perros guardianes generalmente no son buenos perros de ataque.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <p>
+                Los perros de ataque a menudo son utilizados por la policía y los cuerpos de seguridad. Son entrenados para atacar cuando se les ordene y responder agresivamente a amenazas o intrusos potenciales.
+              </p>
+            </li>
+            <li>
+              <p>
+                La mayoría de los perros de ataque están bien entrenados y no actuarán de forma agresiva a menos que sus dueños lo ordenen. Sin embargo, los perros de ataque que no están bien entrenados pueden atacar sin aviso y representan una amenaza grave para humanos y otros animales.
+              </p>
+            </li>
+            <li>
+              <p>
+                Es poco probable que un dueño promedio necesite un perro de ataque.
+              </p>
+            </li>
+          </ul>
+          <Image placeholder="blur" blurDataURL={placeholder_1} layout='fixed' width="200" height="200" src="/imgs/pitbull-perro-ataque.jpg" alt='perro de ataque' title='perro de ataque' />
+        </div>
+      </article>
 
       <h2>Entrenamiento para perros guardianes</h2>
       <b>
@@ -118,88 +176,8 @@ const Index = () => {
       <p>
         Adiestrar a tu perro para ser un perro protector tomará un poco de tiempo y paciencia, pero el resultado será un perro que no solo te protegerá contra una amenaza, sino que también estará a gusto y bien educado en situaciones no amenazadoras, en esta sección aprenderas como educar un perro guardian.
       </p>
-      <article className="perro_ataque_perro_guardian" >
-        <h3>Reconoce la diferencia entre un perro guardián y un perro de ataque</h3>
-        <div>
-          <Image placeholder="blur" blurDataURL={placeholder_1} width="200" height="200" src="/imgs/img_DogBreed-German-Shepard.jpg" alt='perro guardian' title='perro guardian' />
-          <p>
-            Un perro guardián se entrena para alertar a su dueño de la presencia de un extraño o intruso a través de ladridos o gruñidos. Los perros guardianes usualmente no son entrenados para atacar cuando lo ordenes o actuar de manera excesivamente agresiva con un extraño. Por lo tanto, los perros guardianes generalmente no son buenos perros de ataque.
-          </p>
-        </div>
-        <div>
-            <ul>
-                <li>
-                  <p>
-                    Los perros de ataque a menudo son utilizados por la policía y los cuerpos de seguridad. Son entrenados para atacar cuando se les ordene y responder agresivamente a amenazas o intrusos potenciales.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    La mayoría de los perros de ataque están bien entrenados y no actuarán de forma agresiva a menos que sus dueños lo ordenen. Sin embargo, los perros de ataque que no están bien entrenados pueden atacar sin aviso y representan una amenaza grave para humanos y otros animales.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Es poco probable que un dueño promedio necesite un perro de ataque.
-                  </p>
-                </li>
-            </ul>
-            <Image placeholder="blur" blurDataURL={placeholder_1} layout='fixed' width="200" height="200" src="/imgs/pitbull-perro-ataque.jpg" alt='perro de ataque' title='perro de ataque' />
-          </div>
-        </article>
-        
-        
-      <article>
-        <h3>Determina si la raza de tu perro es una raza común de perros guardianes</h3>
-        <p>
-          Aunque se puede entrenar a la mayoría de los perros para ser perros guardianes, ciertas razas son conocidas por ser buenos perros guardianes. Por ejemplo, se conoce que las razas pequeñas como Chow Chow, pug y Shar Pei son buenos perros guardianes. Las razas más grandes, como dóberman, pastor alemán y Akita también son excelentes perros guardianes.
-        </p>
-        <ul>
-          <li>
-            <p>
-              Ciertas razas, tales como el pastor alemán y dóberman, pueden entrenarse para ser tanto perros guardianes como perros de ataque.
-            </p>
-          </li>
-          <li>
-            <p>
-              Si tienes un perro de raza pura que no es una raza común de perro guardián o si tienes un perro cruzado, aún es posible entrenarlo para ser un excelente perro guardián. Si tiene las características conductuales de un perro guardián, y es entrenado y socializado apropiadamente, entonces podrías entrenarlo para protegerte.
-            </p>
-          </li>
-        </ul>
-      </article>
-      <article>
-        <h3>Aprende acerca de los rasgos de personalidad de un perro guardián ideal</h3>
-        <p>
-          Contrario a la creencia pública, un buen perro guardián no debe reaccionar por miedo o pura agresión. Generalmente, un buen perro guardián debe ser territorial y protector con su dueño y su propiedad, pero permanecer obediente a las órdenes de su dueño.
-        </p>
-        <ul>
-          <li>
-            <p>
-              Un buen perro guardián debe confiar en sí mismo y sus alrededores. Un perro confiado tiene curiosidad sobre una nueva persona o área y no es tímido ni asustadizo cerca de nuevas personas. Es posible que tu perro ya tenga este rasgo inherentemente, pero la socialización adecuada también puede infundir confianza en un perro.
-            </p>
-          </li>
-          <li>
-            <p>
-              Un buen perro guardián también es firme. Esto no necesariamente significa que es excesivamente agresivo o prepotente. En su lugar, significa que está cómodo poniéndose en una posición que le permitirá obtener lo que quiere. También significa que tiene confianza para acercarse a una nueva situación o persona, en vez de alejarse.
-            </p>
-          </li>
-          <li>
-            <p>
-              La sociabilidad es otra característica importante de un buen perro guardián. Un perro guardián bien socializado será capaz de reconocer y desconfiar de un extraño en la presencia de su dueño, pero no atacará ni se pondrá excesivamente agresivo con dicho extraño.
-            </p>
-          </li>
-          <li>
-            <p>
-              Los buenos perros guardianes también deben ser fáciles de entrenar. Los Chow Chow son buenos perros guardianes, ya que desconfían naturalmente de los extraños, pero tienden a ser muy independientes y no son fáciles de entrenar.
-            </p>
-          </li>
-          <li>
-            <p>
-              Los perros leales son buenos perros guardianes. Mientras más leal sea tu perro, será más probable que quiera defenderte y protegerte. Los pastores alemanes son conocidos por ser una raza muy leal.
-            </p>
-          </li>
-        </ul>
-      </article>
+
+
       <article>
         <h3>Socializa a tu perro desde cachorro</h3>
         <p>
@@ -231,6 +209,38 @@ const Index = () => {
               Si tu perro es adulto y ya lo has entrenado y socializado, entonces debe estar en camino a convertirse en un buen perro guardián.
             </p>
           </li>
+        </ul>
+      </article>
+      <article>
+        <h3>Entrena a tu perro para ladrar en alerta</h3>
+        <p>
+          <b>Elige una palabra desencadenante.</b> Para entrenar a tu perro a alertarte cuando un extraño está en la puerta o en tu propiedad, primero necesitas establecer una palabra desencadenante para que sirva como orden. Puedes usar “ladra” como una orden. Algunos dueños prefieren usar una palabra distinta a “ladra” (por ejemplo, “habla”) de tal manera que la orden no sea tan obvia para las personas a tu alrededor
+        </p>
+        <ul>
+          <li>Una vez que elijas tu palabra desencadenante “ladra”, dila con el mismo nivel de entusiasmo cada vez que le des esta orden a tu perro.</li>
+          <li>Usa la misma palabra desencadenante cada vez que le ordenes a tu perro que ladre.</li>
+        </ul>
+        <p>
+          <b>Practica la orden.</b> La mayoría de los perros son ladradores naturales y no necesitan una orden para ladrar al sonido de alguien acercándose o un ruido repentino. La clave aquí es hacer que tu perro ladre cuando lo ordenes. Para comenzar, amarra la correa a tu perro a la pata de una mesa de cocina o en un lugar en la cerca de tu jardín. Ofrécele un premio a tu perro a medida que te alejes de él y luego sal de su campo de visión
+        </p>
+        <ul>
+          <li>Apenas tu perro haga un sonido, como un quejido o un ladrido, corre hacia él y felicítalo con “buen ladrido” o “buena (palabra desencadenante)”. Dale su premio inmediatamente. Después de repetirlo varias veces, tu perro debe comenzar a conectar el elogio de su ladrido con un premio.</li>
+          <li>Una vez que tu perro esté cómodo con la orden para ladrar mientras esté en la misma área o lugar, muévelo a áreas diferentes en tu jardín y en tu casa. También debes probar su respuesta a la orden cuando estés paseándolo o jugando juntos en un lugar público.</li>
+        </ul>
+        <p>
+          <b>Sé firme y claro con la orden</b>. La consistencia y la práctica son clave para hacer que retenga la orden. Si quieres probar su respuesta durante una caminata, deja de caminar y míralo directamente a los ojos. Luego, di una orden entusiasta de “ladra”. Si se ve confundido o duda ante tu orden, ofrécele el premio y repite la orden
+        </p>
+        <ul>
+          <li>Idealmente, tu perro debe ladrar solo una vez cuando le des la orden. Sin embargo, es posible que tu perro quiera seguir ladrando una vez que hayas hecho que empiece. No lo premies si ladra continuamente. Espera que se calme antes de volver a darle la orden.</li>
+        </ul>
+        <p>
+          <b>Crea una situación simulada.</b> Para retar el entendimiento de tu perro con respecto a la orden “ladra”, mantenlo dentro de tu casa y sal por la puerta principal. Una vez que estés afuera, toca el timbre y dale a tu pero la orden “ladra”. Prémialo cuando ladre una vez al dar la orden. Luego, toca la puerta y dale la orden “ladra”. Prémialo si responde correctamente a tu orden.
+        </p>
+        <ul>
+          <li>
+            Si es posible, ensaya esta situación en la noche cuando esté oscuro afuera. Es probable que quieras que tu perro te advierta cuando haya alguien en la puerta por la noche, así que será importante que entienda que debe responder con la orden “ladra” durante el día así como en la noche.
+          </li>
+          <li>Practica la orden “ladra” en intervalos cortos. Después de tres a cuatro repeticiones, dale a tu perro un descanso y deja que haga algo más por 45 minutos aproximadamente. Después de este descanso, practica la orden “ladra” varias veces más. La meta es evitar entrenarlo demasiado de tal manera que tu perro no se aburra ni se frustre durante sus sesiones de entrenamiento.</li>
         </ul>
       </article>
       <article>
@@ -296,7 +306,7 @@ const Index = () => {
         <ul>
           <li>
             <p>
-            No lo alientes a ladrar si te encuentras con un extraño amigable o neutral cuando lo saques a pasear
+              No lo alientes a ladrar si te encuentras con un extraño amigable o neutral cuando lo saques a pasear
             </p>
           </li>
         </ul>
@@ -311,13 +321,25 @@ const Index = () => {
     <style jsx>
       {
         `
-        article{
+       section > article{
           margin:10px auto;
         }
       .gallery{
         display:grid;
         grid-template-columns:repeat(2,1fr);
         grid-auto-rows:1fr;
+        gap:2px;
+      }
+      .gallery article{
+        position:relative;
+        overflow:hidden;
+      }
+      .gallery article h3{
+        position:absolute;
+        width:100%;
+        background:var(--shadow-color);
+        text-align:center;
+        bottom:0;
       }
       @media(min-width:820px){
         .gallery{

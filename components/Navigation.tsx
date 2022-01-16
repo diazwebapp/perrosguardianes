@@ -34,6 +34,13 @@ export const Nav = () => {
                     </a>
                 </Link>
                 </div>
+                <div>
+                <Link href="/perros-guardianes-para-fincas" >
+                    <a href="/perros-guardianes-para-fincas" title="Perros para fincas">
+                        Perros para fincas
+                    </a>
+                </Link>
+                </div>
             <style jsx >
                 {
                     `

@@ -16,13 +16,13 @@ const Rottweiler = () => {
         <Head>
             <title>Aprende todo sobre el Rottweiler - Diaz web app</title>
             <meta name="author" content="diaz web app" />
-            <meta name="description" content="El rottweiler es una raza canina de tipo molosoide originaria de Alemania, aunque fue también usado en la Antigua Roma y también es conocido como rottweiler americano debido a la certificación recibida por American Kennel Club." />
+            <meta name="description" content="El Rottweiler es una de las razas más fuertes y poderosas del mundo debido a su gran potencia de mordida. Es un perro considerado potencialmente peligroso debido a sus características físicas, los machos en particular pueden ser algo agresivos y dominantes." />
 
             {/** OG META */}
             <meta property="og:title" content="Aprende todo sobre el Rottweiler - Diaz web app" />
             <meta property="og:site_name" content={'diaz web app'} />
             <meta property="og:type" content="website" />
-            <meta property="og:description" content="El rottweiler es una raza canina de tipo molosoide originaria de Alemania, aunque fue también usado en la Antigua Roma y también es conocido como rottweiler americano debido a la certificación recibida por American Kennel Club." />
+            <meta property="og:description" content="El Rottweiler es una de las razas más fuertes y poderosas del mundo debido a su gran potencia de mordida. Es un perro considerado potencialmente peligroso debido a sus características físicas, los machos en particular pueden ser algo agresivos y dominantes." />
             <meta property="og:locale" content="es_ES" />
             <meta property="og:url" content={process.env.DOMAIN+asPath} />
             <meta property="og:image" content={process.env.DOMAIN + "/imgs/img_DogBreed-Rottweiler.jpg"} />
@@ -32,7 +32,7 @@ const Rottweiler = () => {
             {/**TWITTER META */}
             <meta name="twitter:title" content="Aprende todo sobre el Rottweiler - Diaz web app" />
             <meta name="twitter:site" content="@diazwebapp" />
-            <meta name="twitter:description" content="El rottweiler es una raza canina de tipo molosoide originaria de Alemania, aunque fue también usado en la Antigua Roma y también es conocido como rottweiler americano debido a la certificación recibida por American Kennel Club." />
+            <meta name="twitter:description" content="El Rottweiler es una de las razas más fuertes y poderosas del mundo debido a su gran potencia de mordida. Es un perro considerado potencialmente peligroso debido a sus características físicas, los machos en particular pueden ser algo agresivos y dominantes." />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:image" content={process.env.DOMAIN + "/imgs/img_DogBreed-Rottweiler.jpg"} />
             <meta name="twitter:label1" content="Tiempo de lectura" />
@@ -102,7 +102,7 @@ const Rottweiler = () => {
                 <div>
                     <Image placeholder="blur" blurDataURL={placeholder_1} width="300" height="300" src="/imgs/rottweiler-agresivo.jpeg" title="rottweiler agresivo" alt="rottweiler agresivo"/> 
                     <p>
-                        Es una de las razas más fuertes y poderosas del mundo debido a su gran potencia de mordida. Es un perro considerado potencialmente peligroso debido a sus características físicas, los machos en particular pueden ser algo agresivos y dominantes.
+                        El Rottweiler es una de las razas más fuertes y poderosas del mundo debido a su gran potencia de mordida. Es un perro considerado potencialmente peligroso debido a sus características físicas, los machos en particular pueden ser algo agresivos y dominantes.
                     </p> 
                 </div>
                                
@@ -171,11 +171,11 @@ const Rottweiler = () => {
             </article>
             <article>
                 <h2>Diferencias entre el rottweiler alemán y el americano</h2>
-                <b>Rottweiler alemán</b>
+                <h3><b>Rottweiler alemán</b></h3>
                 <p>
                     Este perro cuenta con una altura de 56 a 61 centímetros. El peso oscila entre los 42 y 50 kilogramos de acuerdo al sexo del ejemplar. No se les corta la cola.
                 </p>
-                <b>Rottweiler americano</b>
+                <h3><b>Rottweiler americano</b></h3>
                 <p>
                     Este perro cuenta con una altura de 56 a 70 centímetros. El peso oscila entre los 35 y 42 kilogramos de acuerdo al sexo del ejemplar. Se les corta la cola, dejando una o dos vértebras.
                 </p>

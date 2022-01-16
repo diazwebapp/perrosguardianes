@@ -31,13 +31,13 @@ function Myapp({ Component, pageProps }: AppProps) {
         <meta property="fb:app_id" content="539696167476713" />
       </Head>
       
-        <header>
+        <header className="header_app">
           <Header {...pageProps} />
         </header>
         <Nav/>
           <Component {...pageProps}/>
 
-        <footer>
+        <footer className="footer_app">
           <Footer />
         </footer>
   </App_provider>;

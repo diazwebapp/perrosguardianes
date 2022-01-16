@@ -34,7 +34,7 @@ const DogCover = ({title,text,imglink,imgalt}:Props) => {
           content:"";
           top:0;left:0;height:100%;width:100%;
           position:absolute;
-          background:linear-gradient(rgba(5, 1, 45, .7),rgba(0,0,0, .4),rgba(5, 1, 45, .7));
+          background:var(--shadow-color);
           z-index:1;
       }
       .post_cover h1,.post_cover p{

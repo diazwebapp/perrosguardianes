@@ -1,6 +1,6 @@
 :root {
     --font-color: #ececec;
-    --shadow-color: rgba(0, 0, 0, 0.7);
+    --shadow-color: rgba(0, 0, 0, 0.8);
     --theme-color: #05012e;
     --background-color: #00000f;
     --hover-color:rgb(0, 132, 240);
@@ -28,19 +28,19 @@ body{
     background-attachment: fixed;
     background-size: contain;
 }
-header,footer{
+body header.header_app, body footer.footer_app{
     background-color: var(--theme-color);
     width:100%;
     height: var(--h-header);
     display:none;
 }
-footer{
+body footer.footer_app{
     display:block;
     position: fixed;
     bottom:0;
     left:0;right:0;
 }
-footer .creditos{
+body footer.footer_app .creditos{
     display: none;
 }
 .nav_app{
@@ -116,19 +116,19 @@ b{
         padding-top: var(--h-header);
         padding-bottom: 0;
     }
-    header,footer{
+    body header.header_app,body footer.footer_app{
         display:block;
         position: fixed;
         top:0;
         z-index:10;
     }
-    header .toolbar{
+    body header.header_app .toolbar{
         justify-content: space-between;
     }
-    footer{
+    body footer.footer_app{
         position: relative;
     }
-    header .nav_controls{
+    body header.header_app .nav_controls{
         background: linear-gradient(to right, var(--theme-color), var(--shadow-color)) ;
     }
     footer .nav_controls{
