@@ -12,15 +12,15 @@ const Index = () => {
     }, [])
     return <main>
         <Head>
-            <title>Perro guardian de fincas - Diaz web app</title>
+            <title>perros guardianes para fincas - Diaz web app</title>
             <meta name="author" content="diaz web app" />
             <meta name="description" content="Cuando se trata de encontrar el mejor perro guardián la protección de fincas o granjas, hay docenas de razas para elegir y cada uno tiene sus propios rasgos y características únicas. Sin embargo, una cosa que todos tienen en común es el instinto de protección del ganado." />
 
             {/** OG META */}
-            <meta property="og:title" content="Perro guardian de fincas - Diaz web app" />
+            <meta property="og:title" content="perros guardianes para fincas - Diaz web app" />
             <meta property="og:site_name" content={'diaz web app'} />
             <meta property="og:type" content="website" />
-            <meta property="og:description" content="Cuando se trata de encontrar el mejor perro guardián la protección de fincas o granjas, hay docenas de razas para elegir y cada uno tiene sus propios rasgos y características únicas. Sin embargo, una cosa que todos tienen en común es el instinto de protección del ganado." />
+            <meta property="og:description" content="Cuando se trata de encontrar los mejores perros guardianes para fincas o granjas, hay docenas de razas para elegir y cada uno tiene sus propios rasgos y características únicas. Sin embargo, una cosa que todos tienen en común es el instinto de protección del ganado." />
             <meta property="og:locale" content="es_ES" />
             <meta property="og:url" content={process.env.DOMAIN + asPath} />
             <meta property="og:image" content={process.env.DOMAIN + "/imgs/perro_guardian_fincas.jpg"} />
@@ -28,9 +28,9 @@ const Index = () => {
             <meta property="og:image:width" content="320" />
             <meta property="og:image:height" content="240" />
             {/**TWITTER META */}
-            <meta name="twitter:title" content="Perro guardian de fincas - Diaz web app" />
+            <meta name="twitter:title" content="perros guardianes para fincas - Diaz web app" />
             <meta name="twitter:site" content="@diazwebapp" />
-            <meta name="twitter:description" content="Cuando se trata de encontrar el mejor perro guardián la protección de fincas o granjas, hay docenas de razas para elegir y cada uno tiene sus propios rasgos y características únicas. Sin embargo, una cosa que todos tienen en común es el instinto de protección del ganado." />
+            <meta name="twitter:description" content="Cuando se trata de encontrar los mejores perros guardianes para fincas o granjas, hay docenas de razas para elegir y cada uno tiene sus propios rasgos y características únicas. Sin embargo, una cosa que todos tienen en común es el instinto de protección del ganado." />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:image" content={process.env.DOMAIN + "/imgs/perro_guardian_fincas.jpg"} />
             <meta name="twitter:label1" content="Tiempo de lectura" />
@@ -44,9 +44,9 @@ const Index = () => {
         </Head>
         <section className="page_home" >
 
-            <h1>Perro guardian de fincas</h1>
+            <h1>perros guardianes para fincas</h1>
             <b>
-                Cuando se trata de encontrar el mejor perro guardián la protección de fincas, hay docenas de razas para elegir y cada uno tiene sus propios rasgos y características únicas. Sin embargo, una cosa que todos tienen en común es el instinto de protección del ganado...
+                Cuando se trata de encontrar los mejores perros guardianes para fincas, hay docenas de razas para elegir y cada uno tiene sus propios rasgos y características únicas. Sin embargo, una cosa que todos tienen en común es el instinto de protección del ganado...
             </b>
 
             <b>
